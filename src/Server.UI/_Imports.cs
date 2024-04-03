@@ -1,0 +1,18 @@
+global using System.Data;
+global using AutoMapper.QueryableExtensions;
+global using SoftSquare.AlAhlyClub.Application.Common.Interfaces;
+global using SoftSquare.AlAhlyClub.Application.Common.Models;
+global using SoftSquare.AlAhlyClub.Infrastructure.Extensions;
+global using SoftSquare.AlAhlyClub.Domain.Entities;
+global using SoftSquare.AlAhlyClub.Server.Common.Interfaces;
+global using SoftSquare.AlAhlyClub.Server.UI.Fluxor;
+global using SoftSquare.AlAhlyClub.Server.UI.Components;
+global using FluentValidation;
+global using Fluxor;
+global using Fluxor.Blazor.Web.Components;
+global using MediatR;
+global using Microsoft.AspNetCore.Components;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.Extensions.Logging;
+global using MudBlazor;
+global using Severity = MudBlazor.Severity;

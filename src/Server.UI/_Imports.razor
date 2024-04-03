@@ -1,0 +1,55 @@
+﻿@using System.Net.Http
+@using System.Net.Http.Json
+@using SoftSquare.AlAhlyClub.Server.UI.Services
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Components.Routing
+@using Microsoft.AspNetCore.Components.Web
+@using Microsoft.AspNetCore.Components.Web.Virtualization
+@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.Extensions.DependencyInjection
+@using Microsoft.Extensions.Configuration
+@using Microsoft.Extensions.Localization
+@using Microsoft.EntityFrameworkCore
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.JSInterop
+@using MudBlazor
+@using MudExtensions
+@using MudExtensions.Enums
+@using BlazorTime
+@using MediatR
+@using SoftSquare.AlAhlyClub.Server.UI.Fluxor
+@using AutoMapper
+@using FluentValidation;
+@using SoftSquare.AlAhlyClub.Domain
+@using SoftSquare.AlAhlyClub.Application.Common.ExceptionHandlers
+@using SoftSquare.AlAhlyClub.Application.Common.Extensions
+@using SoftSquare.AlAhlyClub.Application.Common.Interfaces
+@using SoftSquare.AlAhlyClub.Application.Common.Models
+@using SoftSquare.AlAhlyClub.Application.Common.Security
+@using SoftSquare.AlAhlyClub.Infrastructure.PermissionSet;
+@using SoftSquare.AlAhlyClub.Infrastructure.Constants
+@using SoftSquare.AlAhlyClub.Infrastructure.Extensions
+@using SoftSquare.AlAhlyClub.Infrastructure.Configurations
+@using SoftSquare.AlAhlyClub.Server.UI.Models
+@using SoftSquare.AlAhlyClub.Server.UI
+@using SoftSquare.AlAhlyClub.Server.UI.Shared
+@using SoftSquare.AlAhlyClub.Server.UI.Components
+@using SoftSquare.AlAhlyClub.Server.UI.Components.Autocompletes
+@using SoftSquare.AlAhlyClub.Server.UI.Components.Dialogs
+@using SoftSquare.AlAhlyClub.Server.UI.Components.Identity
+@using SoftSquare.AlAhlyClub.Server.UI.Pages.Identity.Authentication
+@using SoftSquare.AlAhlyClub.Server.UI.Components.Localization
+@using SoftSquare.AlAhlyClub.Server.UI.Components.OptionSelect
+@using SoftSquare.AlAhlyClub.Server.UI.Components.Redirections
+@using SoftSquare.AlAhlyClub.Server.UI.Components.Shared
+@using SoftSquare.AlAhlyClub.Server.UI.Components.Shared.Themes
+@using SoftSquare.AlAhlyClub.Server.UI.Components.Shared.Layout
+@using SoftSquare.AlAhlyClub.Server.UI.Services.Layout
+@using SoftSquare.AlAhlyClub.Server.UI.Extensions
+
+@inject IApplicationSettings ApplicationSettings
+@inject ISnackbar Snackbar
+@inject IDialogService DialogService
+@inject IConfiguration Config
+@inject IAuthorizationService AuthService 
